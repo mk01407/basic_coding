@@ -29,5 +29,5 @@ Use the command => git clone <repo link>
 => To navigate through out the folder use these following command.
     =>cd <floder name >  to ye tumhare folder k le jayega.
     =>dir  this command use for listing repos.
-    =>cd ../../.. (yaha )
+    =>cd ../../.. (yaha pe ".." ye represent karta hai ki humne picche jana hai)
 
