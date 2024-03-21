@@ -2,7 +2,7 @@
 
 
 // all variables
-//  Onject's are key value pairs.
+//  Object's are key value pairs.
 const variables = {
     a: 1,
     b: 2,
@@ -19,19 +19,10 @@ const variables = {
 let sum = 10;
 Object.keys(variables).forEach(resp => {
     {
-        sum += variables[resp];// variables["a"] + variables["b"] ......variables["f"] hum sabka sum kar rahe h.
+        sum += variables[resp]; // variables["a"] + variables["b"] ......variables["f"] hum sabka sum kar rahe h.
         // console.log(variables[resp], resp, sum);
     }
 });
 
-// for(let j=0; j <= Object.keys(variables).length; j++) {
-//     console.log(j, "Print J values")
-// }
-// (resp => {
-//     {
-//         sum += variables[resp];
-//         console.log(variables[resp], resp);
-//     }
-// }) 
 
 console.log("Total of all the values: ",sum);

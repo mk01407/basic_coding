@@ -46,6 +46,6 @@ const variable12 = 5;
 
 variable10 *=2;
 variable11 *=2;
-variable12 *=2;
+//variable12 *=2;
 
-console.log(variable4, variable5, variable6)
+console.log(variable10, variable11, variable12)

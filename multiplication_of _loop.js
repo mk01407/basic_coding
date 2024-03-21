@@ -18,7 +18,7 @@ const variables = {
 let multiplications = 1
 Object.keys(variables).forEach(resp => {
     {
-        sum *= variables[resp];
+        multiplications *= variables[resp];
         console.log(variables[resp], resp);
     }
 }) 
