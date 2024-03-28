@@ -20,6 +20,6 @@ for (var i = 1; i <= n; i++){
         console.log(`${"*".repeat(4)}${" ".repeat(1)}${"*".repeat(4)}`);
     }
     else {
-        console.log(`${"*".repeat(9)}`);
+        console.log(`${"*".repeat(9)}`); 
     }
 }
