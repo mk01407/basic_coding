@@ -149,10 +149,112 @@ const bottom_start_pattern_8 = async (n, i) => {
     }
 }
 
+// ***** *****
+//  ***** ****
+// * ***** ***
+// ** ***** **
+// *** ***** *
+// **** *****
+// ***** *****
+
+const start_pattern_9 = async (n,i) => {
+    console.log(`${"*".repeat(i)} ${"*".repeat(n)} ${"*".repeat(n-i)}`);
+    i += 1;
+    if (i <= n) {
+        start_pattern_9(n,i);   
+    }
+}
+
+//   *
+// *****
+//   *
+// *****
+//   *
+// *****
+//   *
+// *****
+//   *
+
+const start_condition_pattern_1 = async (n,i) => {
+    if (i%2 == 0) {
+        console.log(`${" ".repeat(2)}${"*".repeat(1)}`);
+    } else {
+        console.log(`${"*".repeat(5)}`);
+    }
+    i += 1;
+    if (i <= n ) {
+        start_condition_pattern_1(n,i);
+    }
+}
+
+//   *
+//  ***
+// *****
+//   *
+//  ***
+// *****
+//   *
+//  ***
+// *****
+
+
+// Fibonacci series
+// Eg (0, 1, 1, 2, 3, 5, 8, 13, 21, 34.........)
+
+const fibonacci = (n,i) => {
+
+    fristvalue = i;
+    secondvalue = i+1;
+    console.log(fristvalue);
+    console.log(secondvalue);
+
+
+    for (let x = 0; x <= n; x++) {
+        const series = fristvalue + secondvalue
+        console.log(series);
+        fristvalue = secondvalue
+        secondvalue =  series
+
+    } 
+
+
+}
+
+
+const table = (tableOf, n) => {
+    for (let x = 1; x <= n; x++ ) {
+        const multiplication = x*tableOf
+        console.log(`${tableOf} * ${x} = ${multiplication}`);
+    }
+}
+
+// factorial program for any number
+// Eg: 5 => 1*2*3*4*5 = 120
+// Eg: 4 => 1*2*3*4 = 24
+// Eg: 3 => 1*2*3 = 6
+
+const factorial = (factorialof , n) => {
+    fristvalue = i;
+    secondvalue = i+1;
+    console.log(fristvalue);
+    console.log(secondvalue);
+
+    for (let x = 1; x <= n; x++) {
+        const factorial = x * factorialof
+        console.log(factorial)
+        fristvalue = secondvalue
+        secondvalue = factorial
+    }
+       
+}
 
 
 
-const n = 5
+
+
+
+
+const n = 6
 const i = 0
 // how we can call function
 // startPatern_1_demo();
@@ -163,4 +265,10 @@ const i = 0
 // top_start_pattern_5(n, i);
 // startpatern_6(n,i);
 // startpatern_7(n,i);
-top_start_pattern_8(n, i);
+// top_start_pattern_8(n, i);
+// start_pattern_9(n,i);
+// start_condition_pattern_1(n,i); 
+
+// fibonacci(n,i);
+// table(8, 10);
+factorial (5,n);

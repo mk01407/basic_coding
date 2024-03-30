@@ -17,6 +17,6 @@ for (var i = 1; i <= n; i++) {
     }
 }
 
- console.log(`Hello World! ${n}`,n);
- console.log("Hello World! ${n}",n);
- console.log('Hello World! ${n}',n);
+//  console.log(`Hello World! ${n}`,n);
+//  console.log("Hello World! ${n}",n);
+//  console.log('Hello World! ${n}',n);
