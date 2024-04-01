@@ -233,19 +233,12 @@ const table = (tableOf, n) => {
 // Eg: 4 => 1*2*3*4 = 24
 // Eg: 3 => 1*2*3 = 6
 
-const factorial = (factorialof , n) => {
-    fristvalue = i;
-    secondvalue = i+1;
-    console.log(fristvalue);
-    console.log(secondvalue);
-
-    for (let x = 1; x <= n; x++) {
-        const factorial = x * factorialof
-        console.log(factorial)
-        fristvalue = secondvalue
-        secondvalue = factorial
+const factorial = (currentvalue, value) => {
+    for (let i = 1; i <= value; i++) {
+         currentvalue = currentvalue * i; 
     }
-       
+      console.log("factorialvalue", currentvalue)
+
 }
 
 
@@ -254,8 +247,8 @@ const factorial = (factorialof , n) => {
 
 
 
-const n = 6
-const i = 0
+const n = 5
+const i = 1
 // how we can call function
 // startPatern_1_demo();
 // startPatern_1(n,i);
@@ -271,4 +264,4 @@ const i = 0
 
 // fibonacci(n,i);
 // table(8, 10);
-factorial (5,n);
+factorial (1,5);
