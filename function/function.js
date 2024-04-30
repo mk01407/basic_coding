@@ -281,21 +281,14 @@ const apseries = async (fristvalue, difference) => {
 // start value (1) and incrrement value by(sum of last and 3rd last value) till 100
 // 1, 3, 5, 6, 9, 14, 20, 29,   ......
 
-const apseries1 = async (x,n) => {
-    fristvalue = x;
-    secondvalue = x + 2;
-    console.log(fristvalue);
-    console.log(secondvalue);
+const apseries1 = async (x) => {
 
-    for (let x = 1; x < n; x++) {
-        const series = fristvalue + secondvalue;
-        console.log(series)
-        fristvalue = secondvalue
-        secondvalue = series
-    }
+    for (let x = fristvalue; x < 100; x+=secondvalue) {
+        console.log(x)
+    
 }
 
-
+}
 const n = 8
 const x = 1
 // how we can call function
@@ -316,5 +309,5 @@ const x = 1
 // factorial (1,5);
 // findprime(12);
 //  primelist(1, 11);
-// apseries(1,2);
-apseries1(x , n)
+//  apseries(1,2);
+apseries1(x, n);

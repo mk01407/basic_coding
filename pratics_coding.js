@@ -170,3 +170,13 @@ const u = 5;
 for (var i = 1; i <= u; i++) {
     console.log("*".repeat(i), "*".repeat(n), "*".repeat(n-i))
 }
+
+// *
+// **
+// ***
+// ****
+// *****
+const o = 1;
+for (var i = 5; i >= o; i++) {
+     console.log("*".repeat(i), );
+}
