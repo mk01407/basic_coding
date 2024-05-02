@@ -201,7 +201,7 @@ const start_condition_pattern_1 = async (n, i) => {
 // Fibonacci series
 // Eg (0, 1, 1, 2, 3, 5, 8, 13, 21, 34.........)
 
-const fibonacci = (n, i) => {
+ const fibonacci = (n, i) => {
 
     fristvalue = i;
     secondvalue = i + 1;
@@ -281,12 +281,22 @@ const apseries = async (fristvalue, difference) => {
 // start value (1) and incrrement value by(sum of last and 3rd last value) till 100
 // 1, 3, 5, 6, 9, 14, 20, 29,   ......
 
-const apseries1 = async (x) => {
+const apseries1 = (startvalue ) => {
 
-    for (let x = fristvalue; x < 100; x+=secondvalue) {
-        console.log(x)
-    
-}
+    lastvalue = startvalue;
+    secondlastvalue = startvalue + 2;
+    console.log(lastvalue);
+    console.log(secondlastvalue);
+
+
+    for (let x = 0; x < 100; x++) {
+        const series = lastvaluevalue + secondlastvalue
+        console.log(series);
+        lastvalue = secondlastvalue
+        secondlastvalue = series
+
+    }
+
 
 }
 const n = 8
@@ -310,4 +320,4 @@ const x = 1
 // findprime(12);
 //  primelist(1, 11);
 //  apseries(1,2);
-apseries1(x, n);
+apseries1(1);
